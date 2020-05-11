@@ -1,0 +1,11 @@
+.image-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0 10px; /* 0 - промежуток перед строчкой row, задается в grid-auto-rows, 10 - между колонками*/
+    grid-auto-rows: 10px; /* описание какой длины каждая строка, каждый элемент */
+}
+/* 1fr - обозначает то что каждая колонка имеет один и тот же размер */
+.image-list img {
+    width: 250px;
+    grid-row-end: span 2;
+}
